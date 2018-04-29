@@ -12,7 +12,6 @@ defmodule ArchPlaygroundPhoenixWeb.ChannelCase do
   inside a transaction which is reset at the beginning
   of the test unless the test case is marked as async.
   """
-
   use ExUnit.CaseTemplate
 
   using do
@@ -25,9 +24,7 @@ defmodule ArchPlaygroundPhoenixWeb.ChannelCase do
     end
   end
 
-
   setup _tags do
     :ok
   end
-
 end

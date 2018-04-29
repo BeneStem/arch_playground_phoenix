@@ -12,7 +12,6 @@ defmodule ArchPlaygroundPhoenixWeb.ConnCase do
   inside a transaction which is reset at the beginning
   of the test unless the test case is marked as async.
   """
-
   use ExUnit.CaseTemplate
 
   using do
@@ -26,9 +25,7 @@ defmodule ArchPlaygroundPhoenixWeb.ConnCase do
     end
   end
 
-
   setup _tags do
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end
-
 end

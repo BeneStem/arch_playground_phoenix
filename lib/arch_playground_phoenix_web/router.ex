@@ -7,5 +7,7 @@ defmodule ArchPlaygroundPhoenixWeb.Router do
 
   scope "/api", ArchPlaygroundPhoenixWeb do
     pipe_through :api
+
+    get "/:messenger", ApiController, :index
   end
 end
