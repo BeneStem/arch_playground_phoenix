@@ -25,7 +25,7 @@ defmodule ArchPlaygroundPhoenix.Mixfile do
 
   # Specifies which paths to compile per environment.
   defp elixirc_paths(:test), do: ["lib", "test/support"]
-  defp elixirc_paths(_),     do: ["lib"]
+  defp elixirc_paths(_), do: ["lib"]
 
   # Specifies your project dependencies.
   #
@@ -33,6 +33,7 @@ defmodule ArchPlaygroundPhoenix.Mixfile do
   defp deps do
     [
       {:credo, "~> 0.9.1", only: [:dev, :test], runtime: false},
+      {:distillery, "~> 1.5", only: [:dev, :test], runtime: false},
       {:phoenix, "~> 1.3.2"},
       {:phoenix_pubsub, "~> 1.0"},
       {:gettext, "~> 0.11"},
